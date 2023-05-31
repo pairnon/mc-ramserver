@@ -12,6 +12,8 @@ start = "cd {path} && java -Xmx{alloc_ram} -Xms{alloc_ram} -jar {jar_file} nogui
 
 subprocess.Popen(start, shell=True)
 
+sleep(30)
+
 server = Server()
 
 server.exec("/stop")
