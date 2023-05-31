@@ -29,6 +29,4 @@ class Server:
         self.rcon.connect()
         response = self.rcon.command(command[1::])
         print(response) # Print the server's response
-
-    def exit(self):
         self.rcon.disconnect()
